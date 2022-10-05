@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["rickandmortyapi.com, rb.gy"],
+    domains: ["rickandmortyapi.com", "rb.gy", "image.tmdb.org"],
     loader: "custom",
     path: "/",
   },
