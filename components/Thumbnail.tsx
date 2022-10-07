@@ -11,7 +11,7 @@ interface Props {
 
 export const Thumbnail = ({ movie }: Props) => {
   return (
-    <div className="relative h-28 min-w-[180px] cursor-pointer duration-200 ease-out md:h-36 md:min-w-[260px] md:hover:scale-105 ">
+    <div className="relative h-28 min-w-[180px] cursor-pointer rounded-sm duration-200 ease-out md:h-36 md:min-w-[260px] md:hover:scale-105 ">
       <Image
         alt="bannerImage"
         loader={ImageLoader}
@@ -20,7 +20,7 @@ export const Thumbnail = ({ movie }: Props) => {
           movie?.backdrop_path || movie?.poster_path
         }`}
         layout="fill"
-        className="rounded-md object-cover"
+        className="rounded-sm object-cover"
       />
     </div>
   );

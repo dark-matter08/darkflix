@@ -45,7 +45,7 @@ export const Header = () => {
         </ul>
       </div>
 
-      <div className="flex items-center space-x-4 text-sm font-light">
+      <div className="flex items-center space-x-5 text-sm font-light">
         <SearchIcon className="hidden sm:inline  h-6 w-6" />
         <p className="hidden lg:inline">Kids</p>
         <BellIcon className="h-6 w-6" />
