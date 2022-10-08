@@ -21,7 +21,7 @@ export const Banner = ({ netflixOriginals }: Props) => {
 
   return (
     <div className="flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12">
-      <div className="absolute top-0 left-0 h-[95vh] w-screen ">
+      <div className="absolute top-0 left-0 h-[95vh] w-screen bg-gradient-to-b">
         <Image
           alt="bannerImage"
           loader={ImageLoader}
@@ -31,11 +31,11 @@ export const Banner = ({ netflixOriginals }: Props) => {
           objectFit="cover"
         />
       </div>
-      <div className="relative flex flex-col space-y-2">
-        <h1 className="text-2xl md:text-4xl lg:text-7xl font-bold">
+      <div className="flex flex-col relative space-y-2">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <p className="max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">
+        <p className="max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xl lg:text-xl">
           {movie?.overview}
         </p>
 
