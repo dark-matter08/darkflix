@@ -20,7 +20,7 @@ export const Thumbnail = ({ movie }: Props) => {
           movie?.backdrop_path || movie?.poster_path
         }`}
         layout="fill"
-        className="rounded-sm object-cover"
+        className="rounded-md object-cover"
       />
     </div>
   );
